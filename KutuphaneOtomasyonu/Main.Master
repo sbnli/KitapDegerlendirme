@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="KutuphaneOtomasyonu.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" ="anonymous">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+            <tr>
+                <td style="vertical-align: top; background-color: #CCCCCC;">
+                    <asp:Image ID="Image2" runat="server" Height="144px" ImageUrl="~/Resimler/libraries.jpg" Width="351px" />
+                    <br />
+                    Menü<br />
+                    <a href="Anasayfa.aspx">Anasayfa</a>
+                    <br />
+                    <a href="Profilim.aspx">Profilim</a>
+                    <br />
+                    <a href="MesajKutusu.aspx">Mesaj Kutusu</a>
+                    <br />
+                    <asp:Panel ID="PnlAdminMenu" runat="server">
+                        <a href="KitapEkle.aspx">Kitap Ekle</a>
+                        <br />
+                        <a href="KitapYonetimi.aspx">Kitap Listesi</a><br />
+                        <a href="YazarEkle.aspx">Yazar Ekle</a>
+                        <br />
+                        <a href="#">Yazar Listesi</a>
+                    </asp:Panel>
+                    <br />
+                    <a href="KitapAra.aspx">Kitap-Yazar Ara</a>
+                    <br />
+                    <asp:Image ID="Image4" runat="server" Height="160px" ImageUrl="~/Resimler/libraries.jpg" Width="350px" />
+                    <br />
+                </td>
+                <td style="vertical-align: top">
+                    <p>
+                        Hoşgeldiniz&nbsp;&nbsp;
+        <asp:Label ID="lblKullaniciAdi" runat="server" Text="Label"> </asp:Label>
+                    </p>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+   
+</body>
+</html>
